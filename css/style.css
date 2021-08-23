@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 2.5vw;
+    font-weight:600;
+}
+
+body {
+    background-color: black;
+    text-align:center;
+    margin:auto;
+    width:100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+div {
+    background-color: white;
+    color:black;
+    font-size: 20px;
+}
+
+img {
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+.grid-container-header {
+    background-color: white;
+}
+
+.grid-container-body{
+    background-color:black;
+
+    display:grid;
+    justify-content: center;
+    align-content: center;
+
+    
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+
+    grid-template-areas: 
+    'category1 category1 category1'
+    'option1 option2 option3'
+    'option7 . .'
+    'category2 category2 category2'
+    'option4 option5 option6';
+
+
+}
+
+.grid-container-body .category1 {
+    height: 200px;
+}
+
+.title-logo {
+    text-align: left;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+}
+
+.navi-bar {
+    background-color: black;
+    color: white;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.img-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.center-text {
+    position: absolute;
+    top:85%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+}
+
+h2.center-text {
+    position: absolute;
+    top:50%;
+    color:rgb(224, 218, 218);
+    font-size: 70px;
+    font-weight: 1600px;
+}
+
+.main-image {
+    width:100%;
+    height:100%;
+}
+
+.header {
+    grid-area: header;
+}
+
+.grid-item {
+    border: 5px solid black;
+    padding: 10px;
+    
+}
+
+.category1 {
+    grid-area: category1;
+}
+
+.category2 {
+    grid-area: category2;
+}
+
+.option {
+    grid-area: option;
+}
+
+.aboutMe {
+    grid-area: aboutMe;
+    grid-row: 6 / 6;
+    grid-column: 2 / 2
+}
+
+.bar {
+    align-items: center;
+}
